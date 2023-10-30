@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(40, 40, 40);    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex: wrap;
+}
+nav .logo{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    color: #000000;
+    background: rgb(255, 255, 255);
+}
+.back{
+    position: relative;
+}
+.pic{
+    height: 600px;
+    width: 100%;
+}
+.pic2{
+    display: none;
+}
+.content{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 0rem;
+    height: 600px;
+    width: 100%;
+    background-color: rgba(89, 88, 88, 0.8);
+    padding: 150px;
+}
+.content h1{
+    padding-bottom: 90px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.content h2{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+
+/* FEAUTERED DESTINATION */
+.features{
+    padding: 40px;
+    background-color: beige;
+    height: 750px;
+    margin-top:-10px;
+}
+.features h1{
+    font-size:40px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 15px 0 30px;
+}
+.features h1::after { 
+    content: '';
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 5px auto auto;
+    display: block;
+}
+
+.abc{
+    position: absolute;
+    left: 100px;
+ }
+ .cover{
+     width: 900px;
+     height: 400px;
+     display: flex;
+ }
+ .box{
+     margin: 20px;
+     width: 800px;
+     height: 510px;
+     box-shadow: -2px 0 10px #000;
+ }
+ .box img{
+     width: 400px;
+     height: 300px;
+ }
+ .box h2{
+     text-align: center;
+     font-size: 30px;
+     padding: 10px;
+ }
+ .box ol{
+     list-style-type: disc;
+     font-size: 20px;
+ }
+ .price1{
+    padding: 20px;
+ }
+
+ .list{
+    position: relative;
+    left: 35px;
+ }
+ .price1 h2{
+    font-size: 25px;
+    background-color: rgb(43, 39, 39);
+    color: white;
+    padding: 10px;
+    width: 170px;
+    border-radius: 25px;
+    position: relative;
+    left: 100px;
+ }
+ .price1 a{
+    text-decoration: none;
+ }
+ .price1 h2:hover{
+    background-color: rgb(156, 72, 72);
+    color: black;
+ }
+
+ .services{
+    background-color: aliceblue;
+    width: 100%;
+    height: 750px;
+ }
+ .rules{
+    display: flex;
+    padding-top: 50px;
+    margin-left: 90px;
+ }
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 50px
+}
+.services h1::after { 
+    content: '';
+    width: 8%;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 2px auto auto;
+    display: block;
+}
+
+.services i{
+    font-size: 70px;
+    color: grey;
+    background-color: black;
+    padding: 25px;
+    border-radius: 30px;
+    position: absolute;
+}
+.hotel h3{
+    position: relative;
+    left: 150px;
+    font-size: 30px;
+}
+.hotel p{
+    position: relative;
+    left: 150px;
+}
+.hotel {
+    width: 500px;
+}
+.vehicle{
+    width: 500px;
+}
+.vehicle i{
+    margin-left: 200px;
+    font-size: 60px;
+}
+.vehicle h3{
+    position: relative;
+    left: 370px;
+    font-size: 30px;
+}
+.vehicle p{
+    position: relative;
+    left: 370px;
+}
+.rules1{
+     padding-top: 180px;
+     display: flex;
+     margin-left: 90px;
+}
+.ticket h3{
+    position: relative;
+    left: 150px;
+    font-size: 30px;
+}
+.ticket p{
+    position: relative;
+    left: 150px;
+}
+.ticket{
+    width: 500px;
+}
+.cancel{
+    width: 500px;
+}
+.cancel i{
+    margin-left: 200px;
+}
+.cancel h3{
+    position: relative;
+    left: 370px;
+    font-size: 30px;
+}
+.cancel p{
+    position: relative;
+    left: 370px;
+}
+
+/* ABOUT US */
+.about{
+    background-color: #000;
+    height: 850px;
+}
+.about h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+.about h1::after { 
+    content: '';
+    width: 20%;
+    background-color: white;
+    height: 4px;
+    margin: 8px auto auto;
+    display: block;
+}
+.mum{
+    padding-top: 40px;
+    display: flex;
+}
+.mum img{
+    width: 500px;
+    height: 520px;
+    margin-left: 120px;
+}
+.mum p{
+    color: white;
+    margin-left: 60px;
+    width: 700px;
+    font-size: 21px;
+}
+
+/* CUSTOMIZE */
+.custom{
+    padding: 40px;
+    height: 900px;
+    background-color:rgb(254, 251, 235);
+}
+.custom h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.custom h1::after { 
+    content: '';
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 8px auto auto;
+    display: block;
+}
+.plan{
+    display: flex;
+}
+.planleft{
+    flex-basis: 60%;
+    padding: 50px;
+}
+.planright{
+    flex-basis: 30%;
+    padding: 50px;
+}
+.planright img{
+    width: 400px;
+    display: flex;
+}
+#kas{
+    position: absolute;
+    z-index: 2;
+    margin-top: 100px;
+}
+#ig{
+    position: absolute;
+    z-index: 3;
+    margin-left: 200px;
+    width: 300px;
+}
+#gt{
+    width: 200px;
+    position: absolute;
+    z-index: 4;
+    margin-top: 300px;
+    margin-left: 250px;
+}
+#beach{
+    margin-top: 450px;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 5;
+    width: 300px;
+
+}
+.planleft h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.planleft p{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.planleft form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 1px solid black;
+    background: rgb(229, 229, 229);
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 6px;
+    color: #000;
+}
+form textarea{
+    height: 150px;
+    color: #000;
+}
+#btn{
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+#btn:hover{
+     background-color: aliceblue;
+     color: #000000;
+}
+
+/* MAIL US */
+
+.mail{
+    padding: 50px;
+    background-color: azure;
+    height: 500px;
+}
+.mailc{
+    display: flex;
+}
+.mail img{
+      width: 500px;
+
+}
+.mail h3{
+    padding-left:100px;
+    padding-top: 50px;
+    width: 700px;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.mail a{ 
+    text-decoration: none;
+    color: black;
+}
+
+/* CONTACT US */
+.contact{
+    background-color: black;
+    display: flex;
+}
+.contactleft{
+    flex-basis: 35%;
+    padding: 50px;
+}
+.contactright{
+    flex-basis: 60%;
+    padding: 50px;
+}
+.contact h1{
+    color: white;
+    font-size: 40px;
+}
+.contactleft p{
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.contact p i{
+    margin-right: 15px;
+}
+.social a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.conatctright form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 6px;
+}
+#btn{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(131, 130, 130);
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: white;
+}
+#msg{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+/* Footer */
+footer{
+    background: linear-gradient(52deg, rgba(245,245,220,1) 0%, rgba(245,245,168,1) 50%, rgba(245,245,220,1) 100%);
+    
+    display: flex;
+    padding: 20px;
+}
+footer h4{
+    font-size:25px;
+}
+footer p{
+    position: absolute;
+    right: 30px;
+    padding-top: 10px;
+}
+footer p i{
+    margin-right: 10px;
+}
+.copy i{
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:600px){
+    /* NAV */
+    nav{
+        padding: 0px;
+    }
+    .navlist #bars{
+        color: white;
+        margin-right: 20px;
+    }
+    nav .fa-solid{
+        display: block;
+        color: black;
+        font-size: 25px;
+    }
+  
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -200px;
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    nav ul li a{
+        color: #000;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        cursor: pointer;
+    }
+    nav .logo{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+    }
+    .nav .fa-solid{
+        font-size: 25px;
+        color: rgb(223, 74, 74);
+    }
+    .navlist{
+        z-index: 3;
+    }
+    .back{
+        z-index: 2;
+    }
+    .pic2{
+        display: block;
+        width: 100%;
+    }
+    .pic{
+        display: none;
+    }
+    .content{
+        height: 100%;
+        background-color: rgba(89, 88, 88, 0.3);
+        padding: 0%;
+        padding-top: 55px;
+    }
+    .content h1{
+        margin: 0%;
+    }
+
+
+    /* FEATURED DESTINATION */
+    .features{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(237, 236, 236);
+    }
+    .abc{
+        position: unset;
+        left: 0px;
+    }
+    .cover{
+        display: unset;
+        width: 500px;
+        height: 100px;
+    }
+    .box{
+        margin: 0%;
+        margin-bottom: 60px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    .box img{
+        width: 300px;
+        height: 200px;
+    }
+    .price1 h2{
+        position: unset;
+        margin-top: 40px;
+        margin-left: 43px;
+    }
+
+    .price{
+        position: unset;
+        margin-top: 30px;
+    }
+
+    /* Services */
+    .services{
+        width: 100%;
+        height: 1100px;
+    }
+    .services h1{
+        text-align: center;
+    }
+    .services h1::after{
+        width: 20%;
+    }
+    .rules , .rules1{
+        display: unset;
+    }
+    .services i{
+        font-size: 30px;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+    .hotel{
+        width: 95%;
+    }
+    .hotel h3{
+        position: unset;
+        margin-left: 120px;
+        font-size: 25px;
+    }
+    .hotel p{
+        position: unset;
+        margin-left: 120px;
+    }
+    .vehicle{
+        width: 95%;
+        margin-top: 50px;
+    }
+    .vehicle h3{
+        position: unset;
+        margin-left: 120px;
+        font-size: 25px;
+    }
+    .vehicle p{
+        position: unset;
+        margin-left: 120px;
+    }
+    .ticket{
+        width: 95%;
+        margin-top: 50px;
+    }
+    .ticket h3{
+        position: unset;
+        margin-left: 120px;
+        font-size: 25px;
+    }
+    .ticket p{
+        position: unset;
+        margin-left: 120px;
+    }
+    .cancel{
+        width: 95%;
+        margin-top: 50px;
+    }
+    .cancel h3{
+        position: unset;
+        margin-left: 120px;
+        font-size: 25px;
+    }
+    .cancel p{
+        position: unset;
+        margin-left: 120px;
+    }
+
+    /* ABOUT US */
+    .about{
+        height: 100%;
+    }
+    .mum img{
+        display: none; 
+    }
+    .mum{
+        padding: 20px;
+    }
+    .mum p{
+        margin: 0%;
+        padding: 0 15px;
+        text-align: center;
+        max-width: 99%;
+        padding-bottom: 50px;
+    }
+
+    /* CUSTOMIZE */
+    .custom{
+        height: 100%;
+        padding: 20px;
+    }
+    .custom h1{
+        margin: 0%;
+        letter-spacing: 0px;
+    }
+    .plan{
+        display: unset;
+    }
+    .plan img{
+        display: none;
+    }
+    .planleft{
+        padding: 20px;
+    }
+    .planleft h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    .planleft p{
+        font-size: 18px;
+        text-align: center;
+    }
+    /* mail us */
+    .mail{
+        padding: 0%;
+        height: 100%;
+    }
+    .mailc{
+        display: unset;
+    }
+    .mail img{
+        width: 100%;
+    }
+    .mailc h3{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding: 30px;
+        
+    }
+
+
+    /* CONTACT */
+    .contact{
+        background-color: #000;
+        display: block;
+    }
+    .contactleft{
+        flex-basis: 100%;
+    }
+    .contactright{ 
+        flex-basis: 100%;
+    }
+
+    /* FOOTER */
+    footer h4{
+         font-size: 15px;
+         position: unset;
+    }
+    footer p{
+        display: none;
+    }
+    .copy i{
+        display: block;
+        position: absolute;
+        right: 15px;
+        margin: 5px;
+        margin-bottom: 2px;
+    }
+
+}
